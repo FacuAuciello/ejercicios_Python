@@ -662,3 +662,177 @@
 
 #actualizarStock(stockActual, vendidos)
 #-------------------------------------------------------------------------------------
+#Practicando variables
+
+#Solicitá al usuario su nombre, apellido, edad y ciudad de residencia
+
+#nombre = "lebron"
+#apellido = "james"
+#edad = 38
+#ciudad = "Los angeles"
+
+#print(f"Hola, mi nombre es {nombre} {apellido}, tengo {edad} anios y vivo en la ciudad de {ciudad}")
+
+#Pedile al usuario un número entero. Convertilo a string y mostrá el tipo de dato antes y después de la conversión.
+
+#ingresa_numero = int(input("Ingresa un numero: "))
+
+#print(type(ingresa_numero))
+#ingresa_numero = str(ingresa_numero)
+#print(type(ingresa_numero))
+
+#Pedile al usuario una frase y mostrá cuántos caracteres tiene (usá len())
+
+#usuario_frase = input("Ingresa una frase: ")
+#print(len(usuario_frase))
+
+#Declarar 4 variables en una sola línea: nombre, apellido, alias, edad. Luego imprimilas en un mensaje
+
+#nombre, apellido, alias, edad = "Kobe", "Bryant", "BLACK-MAMBA", 40
+#print(f"Soy {nombre} {apellido}, me dicen {alias} y mi edad es {edad}")
+
+#inicializá una variable con un tipo de dato (por ejemplo, string), luego asignale un valor de otro tipo (por ejemplo, bool, int, float). Mostrá su valor y su tipo en cada paso.
+
+#valor = "hola"
+#print(type(valor))
+
+#valor = 2
+#print(type(valor))
+
+#valor = 2.5
+#print(type(valor))
+
+#valor = True
+#print(type(valor))
+#-------------------------------------------------------------------------------------
+# Operadores Aritméticos
+
+#Pedile al usuario dos números enteros y calculalos
+
+#a = int(input("Ingresa un numero"))
+#b = int(input("Ingresa un numero"))
+
+#suma = a + b
+#print(suma)
+#resta = a - b
+#print(resta)
+#multiplicacion = a * b
+#print(multiplicacion)
+#division = a / b
+#print (division)
+
+#Pedile al usuario dos números y decile si el primero es múltiplo del segundo usando el operador módulo (%).
+
+#a = int(input("Ingresa un numero"))
+#b = int(input("Ingresa un numero"))
+
+#if a % b == 0:
+#    print(f"{a} es multiplo de {b}")
+#else:
+#    print("No es multiplo")
+
+#Pedile dos palabras al usuario y decile cuál tiene más letras. Si tienen la misma longitud, avisale también.
+
+#palabra1 = str(input("Ingresa una palabra: "))
+#palabra2 = str(input("Ingresa una palabra: "))
+
+#if len(palabra1) > len(palabra2):
+#    print(f"{palabra1} tiene mas letras que {palabra2}")
+#elif len(palabra2) > len(palabra1):
+#    print(f"{palabra2} tiene mas letras que {palabra1}")
+#else:
+#    print("Ambas tienen la misma cantidad de letras")
+
+#pedile al usuario una palabra y un número. Mostrá la palabra repetida 2 elevado a ese número de veces.
+
+#palabra = str(input("Ingresa una palabra: "))
+#numero = int(input("Ingresa un numero: "))
+
+#print(palabra * (2**numero))
+
+#Pedile tres números al usuario: A, B y C. Mostrá en pantalla si se cumple la siguiente condición lógica
+
+#a = input("ingresa un numero: ")
+#b = input("ingresa un numero: ")
+#c = input("ingresa un numero: ")
+
+#if (a > b and b > c) or (c == a):
+#    print(f"A={a}, B={b}, C={c}: Se cumple")
+#else:
+#    print(f"A={a}, B={b}, C={c}: No se cumple")
+#-------------------------------------------------------------------------------------
+
+#Pedile una palabra al usuario y decile cuántas veces aparece la letra "a"
+
+#palabra = str(input("Ingresa una palabra: "))
+
+#print(palabra.count("o"))
+#otra opcion
+#cantidad = palabra.count("o")
+#print(f'La letra "o" aparece {cantidad} veces') #comillas simples y dobles
+
+#Pedile al usuario su nombre y mostralo escrito al revés usando slicing
+
+#nombre = input("Ingresa tu nombre: ")
+
+#nombre_al_reves = nombre[::-1]
+#print(nombre_al_reves)
+
+#Pedile un dato al usuario y mostrá si es un número o no usando .isnumeric()
+
+#dato = input("Ingresa un dato: ")
+
+#print(dato.isnumeric()) Pedile una frase al usuario. Mostrá: Las primeras 3 letras. La frase con salto de línea. La frase con tabulación
+
+#palabra = input("Ingresa una palabra: ")
+
+#tres_primeras = palabra[0:3]
+#print(f"Primeras 3 letras {tres_primeras}")
+
+#salto_linea = "string con\nsalto de linea"
+#print(salto_linea)
+
+#frase_tabulacion = "\tstring con tabulacion"
+#print(frase_tabulacion)
+#-------------------------------------------------------------------------------------
+
+### Lists ###
+
+#Pedile al usuario que ingrese 5 números enteros y guardalos en una lista. Luego imprimí la lista completa y cuántos elementos tiene.
+
+#a, b, c, d, e = 1, 2, 3, 4, 5
+
+#lista = []
+#lista.append(a)
+#lista.append(b)
+#lista.append(c)
+#lista.append(d)
+#lista.append(e)
+#print(f'La lista tiene {len(lista)} elementos')
+
+#accede a elemenos de una lista fija. El primero, el del medio y el ultimo
+
+#colores = ["rojo", "azul", "amarillo", "violeta", "blanco"]
+
+#print(colores[0])
+#print(colores[2])
+#print(colores[4])
+
+#Pedile al usuario que ingrese 4 números. Después preguntale qué número quiere buscar y decile cuántas veces aparece en la lista.
+
+a = input("Ingresa un numero: ")
+b = input("Ingresa un numero: ")
+c = input("Ingresa un numero: ")
+d = input("Ingresa un numero: ")
+
+busqueda = input("Que numero deseas buscar de los que ingresaste?: ")
+if busqueda == a:
+    print(f"El numero aprece {busqueda.count(busqueda)} veces")
+elif busqueda == b:
+    print(f"El numero aprece {busqueda.count(busqueda)} veces")
+elif busqueda == c:
+    print(f"El numero aprece {busqueda.count(busqueda)} veces")
+elif busqueda == d:
+    print(f"El numero aprece {busqueda.count(busqueda)} veces")
+else:
+    print("Ingresa el numero correspondiente")
