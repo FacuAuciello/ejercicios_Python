@@ -820,19 +820,105 @@
 
 #Pedile al usuario que ingrese 4 números. Después preguntale qué número quiere buscar y decile cuántas veces aparece en la lista.
 
-a = input("Ingresa un numero: ")
-b = input("Ingresa un numero: ")
-c = input("Ingresa un numero: ")
-d = input("Ingresa un numero: ")
+#a = input("Ingresa un numero: ")
+#b = input("Ingresa un numero: ")
+#c = input("Ingresa un numero: ")
+#d = input("Ingresa un numero: ")
 
-busqueda = input("Que numero deseas buscar de los que ingresaste?: ")
-if busqueda == a:
-    print(f"El numero aprece {busqueda.count(busqueda)} veces")
-elif busqueda == b:
-    print(f"El numero aprece {busqueda.count(busqueda)} veces")
-elif busqueda == c:
-    print(f"El numero aprece {busqueda.count(busqueda)} veces")
-elif busqueda == d:
-    print(f"El numero aprece {busqueda.count(busqueda)} veces")
-else:
-    print("Ingresa el numero correspondiente")
+#lista = [a, b, c, d]
+
+#busqueda = input("Que numero queres buscar de los que ingreaste: ")
+
+#if busqueda in lista:
+#    cantidad = lista.count(busqueda)
+#    print(f"El numero {busqueda} aparece {cantidad} veces.")
+#else:
+#    print("El numero no se encuentra entre los ingresados.")
+
+#Actualiza elementos de la lista. Reemplaza la segunda fruta por una que el usuario indique
+
+#frutas = ["manzana", "banana", "frutillas", "mandarinas"]
+
+#usuario = str(input("Ingresa una fruta que quiera actualizar: "))
+#frutas[1] = usuario
+#print(frutas)
+
+#Pedile al usuario qué nombre quiere eliminar y usá .remove() para quitarlo. Mostrá la lista actualizada
+
+#frutas = ["manzana", "banana", "frutillas", "mandarinas"]
+
+#busqueda = str(input("Que fruta queres eliminar de los que ingreaste: "))
+
+#if busqueda in frutas:
+#    frutas.remove(busqueda)
+#    print(frutas)
+#else:
+#    print("Ingresa una fruta que se encuentre en la lista")
+
+#Creá una lista con los días de la semana, sin incluir "miércoles". Insertalo en la posición correcta y mostrá la lista completa.
+
+#dias = ["Lunes", "martes", "jueves", "viernes"]
+
+#dias.insert(2,"miercoles")
+#print(dias)
+
+#Ordenala de menor a mayor, Después invertí el orden (de mayor a menor). Mostrá ambas listas
+
+#numeros = [4, 1, 7, 3, 9]
+
+#numeros.sort()
+#print(numeros)
+#numeros.reverse()
+#print(numeros)
+
+#Creá una sublista con los elementos del índice 1 al 3 (inclusive el 1, exclusivo el 3). Copiá la lista original, vaciá la original con .clear(), y mostrá ambas.
+
+#nombres = ["Luna", "Sol", "Estrella", "Nube", "Cielo"]
+
+#print(nombres[0:3])
+#nombres_copia = nombres.copy()
+#nombres.clear()
+
+#print(f"Lista original: {nombres}")
+#print(f"Lista copiada: {nombres_copia}")
+#-------------------------------------------------------------------------------------
+
+### Tuples ###
+
+#Creá una tupla con 3 datos tuyos: nombre, edad, y ciudad. Mostrá la tupla y su tipo
+
+#mi_tupla = "gordo", 23, "mdp"
+#print(type(mi_tupla))
+
+#Mostrá el primer y el último elemento usando índices positivos y negativos
+
+#datos = ("Facu", 25, "Rosario", "Argentina")
+
+#print(datos[0])
+#print(datos[-1])
+
+#Mostrá:Cuántas veces aparece "rojo". En qué índice aparece "amarillo"
+
+#colores = ("rojo", "azul", "verde", "rojo", "amarillo", "rojo")
+
+#print(f"El color rojo aparece {colores.count('rojo')} veces y {colores.count('amarillo')} veces")
+
+#Creá dos tuplas con 3 números cada una. Concatenalas en una nueva tupla y mostrá la suma de todos los números.
+
+#tupla1 = (1,2,3)
+#tupla2 = (4,5,6)
+
+#suma_tuplas = tupla1 + tupla2
+#print(suma_tuplas)
+#suma_total = sum(suma_tuplas)
+#print(suma_total)
+
+#Modificar una tupla (con conversión)Convertila a lista, cambiá la ciudad por otra, agregá un alias y volvela a convertir a tupla.
+
+#datos = ("Facu", 25, "Brasil")
+
+#datos = list(datos)
+#datos.append("Torales")
+#print(type(datos))
+#datos = tuple(datos)
+#print(type(datos))
