@@ -922,3 +922,266 @@
 #print(type(datos))
 #datos = tuple(datos)
 #print(type(datos))
+#-------------------------------------------------------------------------------------
+
+### Sets ###
+
+#Crear un set sin repetidos. Pedile al usuario que ingrese 5 palabras, algunas repetidas. Guardalas en un set y mostrá cuántas palabras únicas ingresó.
+
+#a = str(input("Ingresa una palabra: "))
+#b = str(input("Ingresa una palabra: "))
+#c = str(input("Ingresa una palabra: "))
+#d = str(input("Ingresa una palabra: "))
+#e = str(input("Ingresa una palabra: "))
+
+#mi_set = {a, b, c, d, e}
+#print(f"Ingresaste {len(mi_set)} palabras unicas ")
+
+#Buscar si una palabra existe. Con un set de frutas predefinido, preguntale al usuario si quiere saber si cierta fruta está o no.
+
+#frutas = {"banana", "manzana", "pera", "naranja"}
+
+#que_fruta = str(input("Que fruta buscas?: "))
+#if que_fruta in frutas:
+#    print(f"{que_fruta} esta dentro del set de frutas")
+#else:
+#    print(f"{que_fruta} no se encuentra dentro del set de frutas")
+
+#Eliminar elementos duplicados de una lista. Dada una lista con elementos repetidos, convertí la lista en set para eliminar duplicados y luego volvé a convertirla en lista
+
+#numeros = [1, 2, 2, 2, 3, 3, 4, 5, 6, 6]
+
+#numeros = set(numeros)
+#print(type(numeros))
+#print(numeros)
+
+#numeros = list(numeros)
+#print(type(numeros))
+#print(numeros)
+
+#Unión de dos sets. Creá dos sets de lenguajes que conocés y querés aprender. Unilos y mostrá el resultado sin duplicados.
+
+#conozco = {"python", "html", "javascript"}
+#quiero_aprender = {"java", "rust", "c++", "kotlin", "flutter"}
+
+#union_sets = conozco.union(quiero_aprender)
+#print(union_sets)
+
+#Con los mismos sets del ejercicio anterior, mostrá los lenguajes que querés aprender pero todavía no sabés
+
+#conozco = {"python", "html", "javascript"}
+#quiero_aprender = {"java", "rust", "c++", "kotlin", "flutter"}
+
+#union_sets = conozco.union(quiero_aprender)
+#print(union_sets.difference(conozco))
+
+#-------------------------------------------------------------------------------------
+
+### Dictionaries ###
+
+#Crear un diccionario con tus datos. Creá un diccionario llamado persona con estas claves:"nombre""edad""ciudad"
+
+#mi_diccionario = {"Nombre": "Agustin", "Apellido": "Lopez", "Edad": 28}
+#otra forma
+#mi_diccionario = {
+#    "Nombre": "Agustin",
+#    "Apellido": "Lopez",
+#    "Edad": 28
+#}
+#print(mi_diccionario)
+
+#Agregar y actualizar datos.Usando el diccionario anterior (persona): Agregale una nueva clave "profesion" con el valor "Estudiante".Cambiá el valor de "edad" por uno nuevo.Mostrá el diccionario actualizado.
+
+#mi_diccionario = {
+#    "Nombre": "Agustin",
+#    "Apellido": "Lopez",
+#    "Edad": 28
+#}
+
+#mi_diccionario["Profesion"] = "Carpintero"
+#mi_diccionario["Edad"] = 41
+#print(mi_diccionario)
+
+#Contar cuántas claves tiene. Creá un diccionario con al menos 5 claves. Mostrá cuántas claves tiene y luego mostrá solo las claves y solo los valores por separado.
+
+#autos_GT3 = {
+#    1:"Mercedes",
+#    2:"BMW",
+#    3:"Mclaren",
+#    4:"Audi",
+#    5:"Ferrari"
+#}
+
+#print(f"Tiene {len(autos_GT3)} claves")
+#print(autos_GT3.keys())
+#print(autos_GT3.values())
+
+#Eliminar una clave de un diccionario. Usá del para eliminar la clave "profesion" del diccionario persona y mostrale al usuario cómo quedó el diccionario.
+
+#mi_diccionario = {
+#    "Nombre": "Agustin",
+#    "Apellido": "Lopez",
+#    "Edad": 28,
+#    "Profesion":"Carpintero"
+#}
+
+#del mi_diccionario["Profesion"]
+#print(mi_diccionario)
+
+#Crear un nuevo diccionario desde una lista de claves. Creá una lista con estas claves: ["nombre", "edad", "email"]. Luego usá fromkeys para crear un nuevo diccionario con esas claves y todos los valores iguales a "Desconocido". Mostralo.
+
+#lista = ["nombre", "edad", "email"]
+#diccionario = dict.fromkeys(lista, "default")
+#print(diccionario)
+#-------------------------------------------------------------------------------------
+
+### Conditionals ### ciclos/Loops/bucles
+
+#contador while
+
+#contador = 0
+#while contador < 10:
+#    contador += 1
+#    print(contador)
+
+#Contar pares e impares. Pedile al usuario 6 números y contá cuántos son pares y cuántos impares
+
+#contador_pares = 0
+#contador_impares = 0
+
+#for numeros in range(6):
+#    usuario_ingreso = int(input("Ingresa un numero: "))
+#    if usuario_ingreso % 2 == 0:
+#        contador_pares +=1
+#    else:
+#        contador_impares +=1
+#print(f"PARES: {contador_pares}. IMPARES: {contador_impares}")
+
+#Pedile al usuario números uno por uno hasta que ingrese 0. Mostrá la suma total.
+
+#acumulador = 0
+#ingreso_numeros = int(input("Ingresa un numero: "))
+#while ingreso_numeros != 0:
+#    ingreso_numeros = int(input("Ingresa un numero: "))
+#    acumulador += ingreso_numeros
+#print(acumulador)
+#-------------------------------------------------------------------------------------
+
+### Functions ###
+
+#def saludo():
+#    print("Hola chaval")
+
+#saludo()
+
+#Creá una función llamada multiplicar_dos_numeros(a, b) que reciba dos números y muestre el resultado
+
+#def multiplicar_dos_numeros(a, b):
+#    print(f"El resultado es {a * b}")
+
+#multiplicar_dos_numeros(3, 3)
+
+#Creá una función promedio(lista) que reciba una lista de números y devuelva el promedio.
+
+#lista = [9,8,7]
+
+#def lista_numeros(lista):
+#    promedio = sum(lista) / len(lista)
+#    return promedio
+
+#resultado = lista_numeros(lista)
+#print(f"El promedio es: {resultado}")
+
+#Función con parámetro por defecto. Creá una función presentarse(nombre, ciudad="desconocida") que imprima un mensaje
+
+#def presentarse(nombre, ciudad="desconocido"):
+#    print(f"Hola soy {nombre} y mi ciudad es {ciudad}")
+
+#presentarse("facu")
+
+#Función con cantidad variable de textos. Creá una función listar_palabras(*palabras) que reciba cualquier cantidad de palabras y las imprima una por una en mayúsculas, con su número de orden
+
+#def listar_palabras(*palabras):
+#    for j, palabra in enumerate(palabras, start=1):
+#        print(f"{j}. {palabra.upper()}")
+
+#listar_palabras("python", "hola", "clase")
+
+#-------------------------------------------------------------------------------------
+
+### Classes ###
+
+#Clase Perro simple
+
+#class perro:
+#    def __init__(self, nombre):
+#        self.nombre = f"{nombre} esta ladrando"
+
+#perro_nombre = perro("Larry")
+#print(perro_nombre.nombre)
+
+#Creá una clase Auto que tenga: un atributo modelo, un atributo velocidad (arranca en 0), un método acelerar() que aumente la velocidad en 10, un método frenar() que baje la velocidad en 5
+
+#class auto:
+#    def __init__(self, modelo):
+#        self.modelo = modelo
+#        self.velocidad = 0
+    
+#    def acelerar(self):
+#        self.velocidad += 10
+#        print(f"{self.modelo} esta aumentando la velocidad. Velocidad actual: {self.velocidad}km")
+
+#    def frenar(self):
+#        if self.velocidad >= 5:
+#            self.velocidad -= 5
+#        else:
+#            self.velocidad = 0
+#        print(f"{self.modelo} freno. Velocidad actual: {self.velocidad}km")
+
+#mi_auto = auto("BMW")  
+#mi_auto.acelerar()  
+#mi_auto.frenar()    
+
+#lase CuentaBancaria con propiedad privada
+#Creá una clase CuentaBancaria que tenga:un atributo privado __saldo, un método depositar(monto), un método retirar(monto), un método ver_saldo() que muestre el saldo actual. Asegurate de que no se pueda acceder directamente a __saldo desde afuera.
+
+#class cuentaBancaria:
+#    def __init__(self):
+#        self.__saldo = 20000
+    
+#    def depositar(self, monto):
+#        self.__saldo += monto
+#        print(f"{monto} fue depositado correctamente")
+    
+#    def retirar(self, monto):
+#        if monto <= self.__saldo:
+#            resta = self.__saldo - monto
+#            print(f"Retiraste {resta}")
+#        else:
+#            print("Fondos insuficientes")
+
+#    def ver_saldo(self):
+#        print(f"El saldo actual es de {self.__saldo}")
+
+#mi_cuenta = cuentaBancaria()
+#mi_cuenta.ver_saldo()
+#mi_cuenta.depositar(500)
+#mi_cuenta.retirar(2000)
+#mi_cuenta.ver_saldo()
+
+#Clase Alumno con método promedio
+#Creá una clase Alumno que reciba:nombre, una lista de notas. Agregá un método calcular_promedio() que devuelva el promedio de sus notas.
+
+#class Alumno:
+#    def __init__(self, nombre, notas):
+#        self.nombre = nombre
+#        self.notas = notas
+        
+    
+#    def calcular_promedio(self):
+#        promedio = sum(self.notas) / len(self.notas)
+#        return promedio
+
+#mi_alumno = Alumno("Facu", [8,6,10])
+#print(f"Nombre: {mi_alumno.nombre}")
+#print(f"Promedio: {mi_alumno.calcular_promedio()}")
