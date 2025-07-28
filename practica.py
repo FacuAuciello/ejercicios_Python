@@ -1185,3 +1185,79 @@
 #mi_alumno = Alumno("Facu", [8,6,10])
 #print(f"Nombre: {mi_alumno.nombre}")
 #print(f"Promedio: {mi_alumno.calcular_promedio()}")
+
+#-------------------------------------------------------------------------------------
+
+# +funciones y class
+
+#Nivel 1
+#1)Función de saludo personalizado
+#Crear una función saludar(nombre) que reciba un nombre e imprima: "Hola, [nombre]!".
+
+#2)Función que calcule el doble
+#Crear una función doble(numero) que retorne el doble del número ingresado.
+
+#3)Clase Persona con atributos simples
+#Crear una clase Persona que tenga un atributo nombre y una función presentarse() que imprima "Hola, me llamo [nombre]".
+
+#1)
+#def saludar(nombre):
+#    print(f"hola {nombre}")
+
+#saludar("Marisa")
+
+#2)
+#def doble(numero):
+#    return numero * 2
+
+#print(doble(2)) #si quiero ver como funciona, es correcto print, llamado y parametro
+
+#3)
+#class Persona:
+#    def __init__(self, nombre):
+#        self.nombre = nombre
+
+#    def presentarse(self):
+#        print(f"Hola, me llamo {self.nombre}")
+
+#mi_persona = Persona("Carlos")
+#mi_persona.presentarse()
+
+#Nivel 2
+#1)Función que calcule el promedio de una lista
+#Crear una función calcular_promedio(lista) que reciba una lista de números y retorne el promedio.
+
+#2)Clase Producto con precio e IVA.
+#Crear una clase Producto con atributos nombre y precio. Agregar un método precio_con_iva() que retorne el precio más el 21% de IVA.
+
+#3)Clase Alumno con notas.
+#Crear una clase Alumno con atributos nombre y notas (lista). Agregar un método calcular_promedio() que devuelva el promedio de las notas.
+
+#1)
+#def calcular_promedio(lista):
+#    lista = [8, 9, 6, 8]
+#    promedio = sum(lista) / len(lista)
+#    return promedio
+
+#print(calcular_promedio([8, 9, 6, 8]))
+
+#2)
+class Producto:
+    def __init__(self, nombre, precio):
+        self.nombre = nombre
+        self.precio = precio
+
+    def precio_con_iva(self):
+        calcular_iva = self.precio * 1.21 #iva en argentina es del 21%
+        return calcular_iva
+
+mi_producto = Producto("Placa de video", 500000)
+print(mi_producto.nombre)
+print(mi_producto.precio)
+print(mi_producto.precio_con_iva())
+
+        
+
+
+
+
