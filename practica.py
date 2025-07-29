@@ -1235,29 +1235,116 @@
 
 #1)
 #def calcular_promedio(lista):
-#    lista = [8, 9, 6, 8]
 #    promedio = sum(lista) / len(lista)
 #    return promedio
 
 #print(calcular_promedio([8, 9, 6, 8]))
 
 #2)
-class Producto:
-    def __init__(self, nombre, precio):
-        self.nombre = nombre
-        self.precio = precio
+#class Producto:
+#    def __init__(self, nombre, precio):
+#        self.nombre = nombre
+#        self.precio = precio
 
-    def precio_con_iva(self):
-        calcular_iva = self.precio * 1.21 #iva en argentina es del 21%
-        return calcular_iva
+#    def precio_con_iva(self):
+#        calcular_iva = self.precio * 1.21 #iva en argentina es del 21%
+#        return calcular_iva
 
-mi_producto = Producto("Placa de video", 500000)
-print(mi_producto.nombre)
-print(mi_producto.precio)
-print(mi_producto.precio_con_iva())
+#mi_producto = Producto("Placa de video", 500000)
+#print(mi_producto.nombre)
+#print(mi_producto.precio)
+#print(mi_producto.precio_con_iva())
 
-        
+#3)
+#class Alumno:
+#    def __init__(self, nombre, notas):
+#        self.nombre = nombre
+#        self.notas = notas
+    
+#    def calcular_promedio(self):
+#        promedio = sum(self.notas) / len(self.notas)
+#        return promedio
 
+#mi_alumno = Alumno("Nombre", [8, 6, 10, 10])
+#print(mi_alumno.calcular_promedio())
 
+#Nivel 3
+#1)Clase CuentaBancaria con depósitos y extracciones. Crear una clase CuentaBancaria con un atributo saldo. 
+#Agregar métodos depositar(monto) y retirar(monto) que actualicen el saldo. Agregar un método ver_saldo().
 
+#2)Función que reciba una lista de objetos Alumno y retorne el promedio general de todos.
+#Crear varios alumnos, guardarlos en una lista y crear una función promedio_general(alumnos) que calcule el promedio total de todos.
 
+#3)Clase Rectángulo con área y perímetro. Crear una clase Rectangulo que reciba base y altura como atributos. 
+#Agregar métodos area() y perimetro().
+
+#4)Simulador de carrera simple con autos. Crear una clase Auto con atributos modelo y velocidad, y métodos acelerar() y frenar(). 
+#Crear una función que simule una carrera entre 2 autos llamando varias veces a acelerar() y mostrando cuál llega primero a cierta velocidad.
+
+#1)
+#class cuentaBancaria():
+#    def __init__(self, saldo):
+#        self.saldo = saldo
+
+#    def depositar(self, monto):
+#        self.saldo += monto
+#        print(f"Ingresaste {monto}. Nuevo saldo: {self.saldo}")
+
+#    def retirar(self, monto):
+#        if monto <= self.saldo:
+#            self.saldo -= monto
+#            print(f"Retiraste {monto}. Nuevo saldo: {self.saldo}")
+#        else:
+#            print("Fondos insuficientes")
+
+#    def ver_saldo(self):
+#        print(f"Tu saldo actual es de: {self.saldo}")
+
+#mi_cuenta_bancaria = cuentaBancaria(100000)
+#mi_cuenta_bancaria.depositar(10000)
+#mi_cuenta_bancaria.retirar(50000)
+#mi_cuenta_bancaria.ver_saldo()
+
+#2)
+#class Alumno:
+#    def __init__(self, notas):
+#        self.notas = notas
+
+#    def calcular_promedio(self):
+#        return sum(self.notas) / len(self.notas)
+
+#primer_alumno = Alumno([2, 6, 8, 7])
+#segundo_alumno = Alumno([4, 4, 6, 9])
+#tercero_alumno = Alumno([8, 8, 7, 9])
+#cuarto_alumno = Alumno([10, 10, 9, 9])
+
+#todos_los_alumnos = [primer_alumno, segundo_alumno, tercero_alumno, cuarto_alumno]
+
+#def promedio_general(todos_los_alumnos):
+#    suma_total = 0 #acumulando los promedios individuales
+#    cantidad_alumnos = 0 
+    
+#    for alumno in todos_los_alumnos:
+#        promedio_individual = alumno.calcular_promedio()
+#        suma_total += promedio_individual
+#        cantidad_alumnos += 1
+
+#    promedio_general = suma_total / cantidad_alumnos
+#    return promedio_general
+
+#print(promedio_general(todos_los_alumnos))
+
+#3)Clase Rectángulo con área y perímetro. Crear una clase Rectangulo que reciba base y altura como atributos. 
+#Agregar métodos area() y perimetro().
+
+#3)
+class Rectangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+    
+    def perimetro(self):
+        return 2 * (base + altura)
+    
+    def area(self, base, altura):
+        return base * altura
