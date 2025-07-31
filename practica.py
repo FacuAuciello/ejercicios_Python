@@ -1336,15 +1336,61 @@
 
 #3)Clase Rectángulo con área y perímetro. Crear una clase Rectangulo que reciba base y altura como atributos. 
 #Agregar métodos area() y perimetro().
+#-------------------------------------------------------------------------------------
 
-#3)
-class Rectangulo:
-    def __init__(self, base, altura):
-        self.base = base
-        self.altura = altura
-    
-    def perimetro(self):
-        return 2 * (base + altura)
-    
-    def area(self, base, altura):
-        return base * altura
+#exception hadling
+
+#Objetivo: Pedir al usuario su edad y asegurarte de que sea un número entero positivo.
+#Consigna: Pedí al usuario su edad. 
+#Si ingresa texto o un número negativo, mostrá un mensaje de error y pedile de nuevo hasta que lo haga bien. 
+# Luego imprimí "Edad registrada: X años".
+
+
+#while True:
+#        try:
+#            numero = int(input("Ingresa tu edad: "))
+#            if numero > 0:
+#                print(f"Tu edad es {numero}")
+#                break
+#            else:
+#                print("La edad debe ser mayor a 0")
+#        except:
+#            print("No podes ingresar texto ni numeros negativos o con coma\nINTENTALO DE NUEVO")
+
+#Objetivo: Usar un menú y asegurarte de que el usuario elija una opción válida.
+
+#def menu():
+#    opciones = int(input(("1)Saludar\n2)Mostrar numero favorito\n3)Salir\nElegi una opcion: ")))
+#    return opciones
+
+#def elegir_numero_fav():
+#    decir_numero = int(input("Cual es el numero favorito de tu hermano?: "))
+#    return decir_numero
+
+#def chau():
+#    print("Chau")
+
+#numero_fav = 7
+
+#while True:
+#    try:
+#        opciones_menu = menu()
+#        if opciones_menu == 1:
+#            print("Hola")
+#        elif opciones_menu == 2:
+#            while True:
+#                try:
+#                    opciones_menu = elegir_numero_fav()
+#                    if numero_fav == opciones_menu:
+#                        print(f"El {numero_fav} es correcto")
+#                        break
+#                    else:
+#                        print("No es el numero favorito de tu hermano. INTENTALO DE NUEVO")
+#                except:
+#                    print("Ingresa solo un numero")
+#        elif opciones_menu == 3:
+#            chau()
+#            break
+#    except:
+#        print("Ingresa las opciones correspondientes")
+
