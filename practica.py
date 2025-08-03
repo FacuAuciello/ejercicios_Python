@@ -1393,4 +1393,140 @@
 #            break
 #    except:
 #        print("Ingresa las opciones correspondientes")
+#-------------------------------------------------------------------------------------
+
+#ejercicio validar pin. El usuario debe ingresar un PIN de 4 dígitos. Si se equivoca, debe volver a intentarlo hasta que sea correcto.
+
+#pin = 1020
+#pin_valido = True
+
+#while pin_valido:
+#    ingresar_pin = int(input("Ingresa el pin: "))
+#    if ingresar_pin == pin:
+#        print("El pin es correcto. Accediendo...")
+#        pin_valido = False
+#    else:
+#        print("Intenta de nuevo")
+#-------------------------------------------------------------------------------------
+
+#edabit
+
+#Escriba una función que tome un número entero minutos y lo convierta a segundos. 
+# Ejemplos convert(5) ➞ 300
+
+#def conversion(minutos):
+#    return minutos * 60
+    
+#print(conversion(minutos=5))
+
+#Escriba una función que convierta horas segundos.
+
+#def horas_en_segundos(horas):
+#    return horas * 3600
+
+#print(horas_en_segundos(horas=3))
+
+#Dado un polígono regular de n lados n, devuelve la suma total de los ángulos internos (en grados).
+#n siempre será mayor que 2.
+#La fórmula (n - 2) x 180 da la suma de todas las medidas de los ángulos de un polígono de n lados.
+
+#def suma_poligonos(n):
+#    return (n - 2) * 180
+
+#print(suma_poligonos(6))
+
+#Crea una función que reciba una lista de números y devuelva el primer elemento.
+
+#lista = [1,2,3]
+
+#def recibiendo_lista(lista):
+#    return lista[0]
+
+#print(recibiendo_lista(lista))
+
+#Crea una función que reciba tres números: cantidad de partidos ganados, empatados y perdidos.
+#Ganado = 3 puntos. Empatado = 1 punto. Perdido = 0 puntos. Devolvé el total de puntos.
+
+
+
+#def recibiendo_tres_numeros(ganado, empate, perdido):
+#    ganados = ganado * 3
+#    empatados = empate * 1
+    
+#    suma_total = ganados + empatados 
+#    return suma_total
+
+#print(recibiendo_tres_numeros(6,3,0))
+
+#Consigna: Dado un número de gallinas, vacas y cerdos, 
+#devolvé la cantidad total de patas (cada gallina tiene 2 patas, cada vaca y cerdo tiene 4)
+
+#def cantidad_patas(gallinas, vacas, cerdos): 
+#    galli = gallinas * 2
+#    vak = vacas * 4
+#    crdos = cerdos * 4
+#    suma_patas_total = galli + vak + crdos
+#    return suma_patas_total #otra forma directa return gallinas * 2 + vacas * 4 + cerdos * 4
+
+#print(cantidad_patas(10,5,5))
+
+#Escribí una función que reciba una cadena (string) que representa un número y devolvé ese número como entero.
+#def cadena_a_entero(text):
+#    return int(text)
+
+#print(cadena_a_entero(5))
+
+#Consigna:#Crea una función que reciba dos argumentos y 
+#devuelva True si son iguales, o False si no lo son.
+
+#def iguales_o_no(a,b):
+#    return a==b 
+
+#print(iguales_o_no(5,4))
+
+#def adjetivo_en_verbo(frase):
+#    palabras = frase.split()
+#    return palabras
+
+#print(adjetivo_en_verbo("Hola estoy corriendo"))
+
+#Dada una lista de números, devolvé el número más grande.
+
+#lista = [1,10,100,500,20,3]
+
+#def el_mas_grande(lista):
+#    return min(lista)
+
+#print(el_mas_grande(lista))
+
+#Arreglá una función que solo debe devolver True si el número recibido es 7.
+#era esto XD
+
+#def devolver_siete(numero):
+#    return numero == 7
+
+#print(devolver_siete(7))
+
+#Hice esto
+#def devolver_siete():
+#    bandera = True
+#    while bandera:
+#        numero = int(input("Ingresa un numero: "))
+#        if numero == 7:
+#            print("Correcto")
+#            bandera = False
+#        else:
+#            print("No ingresaste el numero correcto")
+
+#devolver_siete()
+
+#Diferencia entre el máximo y el mínimo en una lista
+
+#lista1 = [10, 4, 1, 4, -10, -50, 32, 21]
+#lista2 = [44, 32, 86, 19]
+
+#def devolver_diferencia(lista1, lista2):
+#    return max(lista1) - min(lista2)
+
+#print(devolver_diferencia(lista1,lista2))
 
